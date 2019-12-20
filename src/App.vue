@@ -132,7 +132,8 @@ export default class App extends Vue {
 
     if (!this.plugin) return;
 
-    this.plugin.setFieldValue(this.plugin.fieldPath, this.value);
+    console.log("Sending", this.normalizedValue);
+    this.plugin.setFieldValue(this.plugin.fieldPath, this.normalizedValue);
   }
 }
 </script>
