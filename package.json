@@ -2,7 +2,7 @@
   "name": "datocms-plugin-table",
   "version": "0.1.0",
   "description": "Table field for DatoCMS",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
