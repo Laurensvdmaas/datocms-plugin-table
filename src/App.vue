@@ -72,6 +72,8 @@ export default class App extends Vue {
 
       const value = plugin.getFieldValue(plugin.fieldPath);
 
+      console.log("Value", value);
+
       if (value) {
         console.log(value);
         this.value = this.denormalizeValue(value);
