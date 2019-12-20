@@ -24,7 +24,7 @@ export default class App extends Vue {
 <style lang="scss">
 .actions {
   button {
-    @apply outline-none rounded-full w-4 h-4;
+    @apply outline-none rounded-full w-6 h-6;
     background: var(--accent-color);
     color: var(--light-color);
   }
