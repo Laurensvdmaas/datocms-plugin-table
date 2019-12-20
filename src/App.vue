@@ -75,8 +75,7 @@ export default class App extends Vue {
       console.log("Value", value);
 
       if (value) {
-        console.log(value);
-        this.value = this.denormalizeValue(value);
+        this.value = this.denormalizeValue(JSON.parse(value));
       }
       plugin.startAutoResizer();
     });
