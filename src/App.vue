@@ -69,9 +69,13 @@ export default class App extends Vue {
 
     DatoCmsPlugin.init((plugin: any) => {
       this.plugin = plugin;
-      this.value = this.denormalizeValue(
-        plugin.getFieldValue(plugin.fieldPath)
-      );
+
+      const value = plugin.getFieldValue(plugin.fieldPath);
+
+      if (value) {
+        console.log(value);
+        this.value = this.denormalizeValue(value);
+      }
       plugin.startAutoResizer();
     });
   }
