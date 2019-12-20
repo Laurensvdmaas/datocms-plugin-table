@@ -15,7 +15,18 @@
     "fieldTypes": [
       "json"
     ],
-    "pluginType": "field_editor"
+    "pluginType": "field_editor",
+    "parameters": {
+      "global": [
+        {
+          "id": "developmentMode",
+          "label": "Development mode?",
+          "type": "boolean",
+          "hint": "Enable development logs on the console"
+        }
+      ],
+      "instance": []
+    }
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
