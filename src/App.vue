@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="m-3">
     <div
-      class="custom-table grid"
+      class="custom-table grid mr-6 mb-6"
       :style="{
         'grid-template-columns': `repeat( ${columns}, auto )`
       }"
