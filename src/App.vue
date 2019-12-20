@@ -20,7 +20,7 @@
           v-for="(td, tdKey) in row"
           :key="`${rowKey}-${tdKey}`"
         >
-          <input type="text" v-model="td.model" />
+          <textarea class="resize-none" v-model="td.model"></textarea>
           <div class="tools group-hover:block">
             <actions
               class="row center-x"
@@ -95,7 +95,11 @@ export default class App extends Vue {
   }
 
   addRow(i) {
-    this.value.body.splice(i, 0, new Array(this.columns).fill({ model: "" }));
+    this.value.body.splice(
+      i + 1,
+      0,
+      new Array(this.columns).fill({ model: "" })
+    );
   }
 
   removeRow(i) {
@@ -153,7 +157,7 @@ export default class App extends Vue {
     border-top: 1px solid var(--semi-transparent-accent-color);
   }
 
-  input {
+  textarea {
     @apply w-full outline-none h-full py-4 px-2 bg-transparent;
   }
 
